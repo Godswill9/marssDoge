@@ -28,8 +28,8 @@ const handleDropDown2=()=>{
     <div>
         <div className='headerCont'>
             <div className='logo'>
-                <img src="images/logo.jfif" alt="webLogo"></img> 
-                <span>MarsDoge</span>
+                <img src="images/logoSamurai.jpg" alt="webLogo"></img> 
+                <span>Pepe Samurai</span>
             </div>
             <div className='compView '>
             <div className='links'>
