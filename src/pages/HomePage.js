@@ -21,13 +21,6 @@ export default function HomePage() {
     gsap.fromTo("#MultiGsap3a",{ opacity:0, y:100,},{opacity:1,y:0,duration:2.4,delay:.5})
     gsap.fromTo("#MultiGsap3",{ opacity:0, y:100,},{opacity:1,y:0,duration:2.4,delay:1})
 
-    //animations
-    // MultiGsapAnimeA
-    // gsap.to("#MultiGsapAnimeA",{y:980,x:1200,duration:1.2, opacity:0,delay:1})
-    // gsap.to("#MultiGsapAnimeB",{y:100,duration:1.2, opacity:0,delay:1})
-    // gsap.to("#MultiGsapAnimeB",{y:-1200,x:-980,duration:1.2, opacity:0,delay:1})
-
-       //next ones(scroll trigger)
     gsap.fromTo("#MultiGsap4",{ opacity:0, y:100,},{opacity:1,y:0,duration:1, scrollTrigger:{ trigger:"#MultiGsap4"}})
     gsap.fromTo("#MultiGsap5",{ opacity:0},{opacity:1,duration:2, delay:1, scrollTrigger:{ trigger:"#MultiGsap5"}})
     gsap.fromTo("#MultiGsap6",{ opacity:0, y:100,},{opacity:1,y:0,duration:1.2, scrollTrigger:{ trigger:"#MultiGsap6"}})
@@ -42,11 +35,11 @@ export default function HomePage() {
   return (
     <div>
         <Header/>
-        <div className='containerOne'>
+        <div className='containerOne' id="container1">
             <img className='background' src="images/logoSamurai-removebg-preview.png" alt='' id='MultiGsap3Img'></img>
-            {/* <img className='background1' src="images/dagger1.jpeg" alt='' id='MultiGsapAnimeA'></img> */}
-            {/* <img className='background1b' src="images/dagger1.jpeg" alt='' id='MultiGsapAnimeB'></img> */}
-            {/* <img className='background1b' src="images/crack2-removebg-preview.png" alt='' id='MultiGsapAnimeB'></img> */}
+            <img className='background1' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeA'></img>
+            <img className='background1b' src="images/SeekPng.com_dot-png_274118.png" alt='' id='MultiGsapAnimeA2'></img>
+            <img className='background1c' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeA2'></img>
             <div className='background2'></div>
             <div className='noteContent'></div>
                 <div className='trapezoid'></div>
@@ -77,37 +70,24 @@ export default function HomePage() {
                     <div className='iconss'>
                     <i style={{"fontSize":"40px", "paddingRight":"35px"}} class="fa fa-facebook" aria-hidden="true"></i>
                     <i style={{"fontSize":"40px", "paddingRight":"35px"}} class="fa fa-reddit" aria-hidden="true"></i>
-                    {/* <i style={{"fontSize":"40px", "paddingRight":"35px"}} class="fa fa-discord" aria-hidden="true"></i> */}
                     <i style={{"fontSize":"40px", "paddingRight":"35px"}} class="fa fa-twitter" aria-hidden="true"></i>
                     <i style={{"fontSize":"40px", "paddingRight":"35px"}} class="fa fa-telegram" aria-hidden="true"></i>
                     </div>
             </div>
             </div>
-            <div className='Section2'>
-            {/* <img className='background1' src="images/dagger1.jpeg" alt=''></img> */}
-            {/* <img className='background1' src="images/dagger1.jpeg" alt=''></img> */}
+            <div className='Section2' id='Section2'>
                 <h2 id='MultiGsap4'>Announcements</h2>
                 <div className='details' id='MultiGsap5'>
-                    {/* <p>✔ The full <a href='#'>CERTIK</a> audit of Pepe Samurai has been completed with Skynet activation.</p>
-                    <p>✔ Pepe Samurai is now available on the <a href='#'>PancakeSwap</a> and <a href='#'>CoinTiger</a> exchanges.</p> */}
+                    <p>✔ (Announcements coming soon ⛷)</p>
                 </div>
             </div>
-            <div className='section3'>
-            {/* <img className='background1' src="images/dagger1.jpeg" alt=''></img> */}
+            <div className='section3' id='Section3'>
                 <h1 id='MultiGsap6'>Tokenomics and Special Features</h1>
                 <div className='details' id='MultiGsap7'>
                     <Charts chartsData={chartData} type='line'/>
-                    {/*
-                    <div className='indiv'>
-                        <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                        <h3>Re-distribution to holders (Reflection)</h3>
-                        <p>7% of each transaction will be redistributed to all existing Pepe Samurai holders as a passive income, based on the number of tokens held by them.</p>
-                    </div> */}
                 </div>
             </div>
-            <div className='section4'>
-            {/* <img className='background1' src="images/dagger1.jpeg" alt=''></img> */}
-            {/* <span>⛷</span> */}
+            <div className='section4' id='Section4'>
                 <img src='' alt=''></img>
                 <img src='' alt=''></img>
                 <h3 id='MultiGsap8'>Our RoadMap</h3>
@@ -164,7 +144,7 @@ export default function HomePage() {
                     <img src="images/SeekPng.com_dot-png_274118.png"></img>
                 </div>
             </div>
-            <div className='FAQs'>
+            <div className='FAQs' id='FAQs'>
                 <h2 id='MultiGsap12'>Frequently asked questions(FAQs)</h2>
                 <div className='accordion'>
                     {dataFAQs.map((item, i)=>(
@@ -182,12 +162,10 @@ export default function HomePage() {
                 <div className='links'>
                 <i style={{"fontSize":"20px",}} class="fa fa-facebook" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-reddit" aria-hidden="true"></i>
-                    {/* <i style={{"fontSize":"20px",}} class="fa fa-discord" aria-hidden="true"></i> */}
                     <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-telegram" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-facebook" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-reddit" aria-hidden="true"></i>
-                    {/* <i style={{"fontSize":"20px",}} class="fa fa-discord" aria-hidden="true"></i> */}
                     <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-telegram" aria-hidden="true"></i>
                     <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
@@ -227,59 +205,53 @@ export default function HomePage() {
 
 const dataFAQs=[
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
          
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     },
     {
-        Question:"what is metaverse?",
-         Answer:"rthgsdgiu hiusfdsu bifgbiwr dsish dfhu uhisfsghfug hiufgbksfdbb fbvkfvfvbjhxzbvjh fdjjfbv bfdhvfkv bfks dbsk fhvbfkb fbdvksdfb vjbkdsbv hkbsdfvbdsfb"
+        Question:"what is Pepe Samurai?",
+         Answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien viverra, luctus metus quis, vestibulum purus. Duis in purus erat. Vivamus vel elit et leo placerat pretium. Maecenas pellentesque vitae lectus non vulputate. Cras id odio eleifend, condimentum est vel, lobortis libero. Ut a pretium arcu. Vestibulum pharetra nisi nec enim feugiat, nec mattis velit mollis. Cras metus odio, vehicula a libero nec, feugiat bibendum tortor."
 
     }
 ]
 
 const chartData = {
     labels: [
-    //   'section1val',
-    //   'section2',
-    //   'section3',
-    //   'section4',
-    //   'section5',dd
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 55, 100,700, 90],
+      data: [ 140, 180, 110, 80],
       backgroundColor:  [
-        'rgb(114, 112, 112)',
-        'rgb(117, 116, 116)', 
-        'rgb(165, 160, 160)',
-        'rgb(199, 191, 191)',
-        'rgb(233, 224, 224)',
+        'rgb(146, 43, 43)', 
+        'rgb(110, 192, 89)',
+        "rgba(240, 240, 130, 0.356)",
+        "rgba(118, 118, 204, 0.466)"
       ],
       hoverOffset:3
     }]

@@ -27,7 +27,6 @@ export default function Charts({chartsData}) {
           },
           responsive:true,
           tooltips: {
-            // backgroundColor: 'rgba(47, 49, 66, 0.8)',
             titleFontSize: "22px",
             titleFontColor: '#fff',
             // caretSize: 0,
