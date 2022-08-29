@@ -17,7 +17,8 @@ a{
     position: fixed;
     z-index: 4;
     color:white;
-    background-color: rgba(241, 241, 241, 0.336);
+    background-color: rgba(231, 223, 223, 0.76);
+    /* background-color: rgba(241, 241, 241, 0.336); */
     transition:2s ease;
 }
 .headerCont .logo{

@@ -14,7 +14,7 @@
 }
 .containerOne .background{
     position: absolute;
-    right:15%;
+    right:13%;
     top:17%;
     z-index: 3;
 }
@@ -22,32 +22,107 @@
    transform: scale(180%);
     position: absolute;
     right:-14%;
-    top:26%;
+    top:23%;
     z-index:2
 }
-.containerOne .background1b{
-    width:10em;
-    height: 10em;
-    position: absolute;
-    right:5%;
-    top:14%;
-    z-index: 1
-
+.containerOne .background1d{
+   position: absolute;
+   bottom:10%;
+   right:0%;
+   width:5em
 }
+.containerOne .background1e{
+   position: absolute;
+   left:30%;
+   width:3em
+   /* border:2px solid green */
+}
+.containerOne .background1f{
+   position: absolute;
+   left:40%;
+   width:3em
+   /* border:2px solid green */
+}
+.containerOne .background1g{
+   position: absolute;
+   left:50%;
+   width:3em
+   /* border:2px solid green */
+}
+.containerOne .background1h{
+   position: absolute;
+   left:60%;
+   width:6em
+   /* border:2px solid green */
+}
+.containerOne .background1I{
+   position: absolute;
+   left:70%;
+   width:7em
+   /* border:2px solid green */
+}
+.containerOne .background1j{
+   position: absolute;
+   left:80%;
+   width:3em
+   /* border:2px solid green */
+}
+.containerOne .background1k{
+   position: absolute;
+   left:20%;
+   width:8em
+   /* border:2px solid green */
+}
+.containerOne .background1L{
+   position: absolute;
+   left:99%;
+   width:5em
+   /* border:2px solid green */
+}
+.containerOne .background1M{
+   position: absolute;
+   left:90%;
+   width:3em
+   /* border:2px solid green */
+}
+.containerOne .background1N{
+   position: absolute;
+   left:75%;
+   width:5em
+   /* border:2px solid green */
+}
+.containerOne .background1O{
+   position: absolute;
+   left:44%;
+   width:2em
+   /* border:2px solid green */
+}
+.containerOne .background1P{
+   position: absolute;
+   left:10%;
+   width:7em
+   /* border:2px solid green */
+}
+.smallCircle{
+    width:4em;
+    top:-10%
+    /* border:2px solid black */
+}
+
 .containerOne .background1c{
     width:55em;
     height: 48em;
     position: absolute;
     left:-30%;
     top:63%;
-
 }
+
 .containerOne .background2{
     width:100%;
     height: 100%;
     position: absolute;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(255, 255, 255, 0.445);
 }
 .noteContent{
     position: absolute;
@@ -288,12 +363,12 @@
         width:20em
     }
     .cont p{
-        font-size: 17px;
+        font-size: 19px;
         width:18em;
         color:rgb(0, 0, 0)
     }
     .cont .address{
-        font-size: 15px;
+        font-size: 19px;
     }
     .buttons button{
         padding:6px;
@@ -306,11 +381,15 @@
         font-size: 3em;
     }
    .cont .para1,.cont .para2{
-    width:14em
+    width:14em;
+    font-size:18px
    }
    .containerOne{
     height: 73em;
    }
+   .cont .address{
+    font-size: 18px;
+}
     .buttons button{
         padding:6px;
         width:4.3em;
@@ -459,6 +538,7 @@
 .section4 .indiv{
   width:22em;
   border-radius: 10px;
+  margin:10px
 }
 .section4 .indiv h3{
     font-size: 19px;
@@ -603,12 +683,15 @@
    margin-left: -5px;
    display: flex;
    flex-wrap: wrap;
+   justify-content: left;
 }
 .footer .indiv .links i{
-    padding: 2px;
+    padding: 5px;
     margin:2px;
-    border: 2px solid black;
-    width:1.5em
+    border: .5px solid black;
+    width:1.5em;
+    border-radius: 5PX;
+    /* padding:10px */
 }
 .copyRight{
     width:100%;

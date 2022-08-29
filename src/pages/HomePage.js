@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Header from '../Header'
 import './styles.css'
-import gsap from 'gsap'
+import gsap, { Elastic } from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Charts from './Chart'
+import Footer from './Footer'
 
 export default function HomePage() {
     gsap.registerPlugin(ScrollTrigger);
@@ -12,7 +13,7 @@ export default function HomePage() {
        if(answer == i){
         return setAnswer(null)
        }
-       setAnswer(i)
+       setAnswer(i)     
     }
    useEffect(()=>{
     gsap.to("#MultiGsap",{opacity:1,duration:2,delay:.31})
@@ -20,6 +21,23 @@ export default function HomePage() {
     gsap.fromTo("#MultiGsap3Img",{ opacity:0, x:160,},{opacity:1,x:0,duration:2.4,delay:.5})
     gsap.fromTo("#MultiGsap3a",{ opacity:0, y:100,},{opacity:1,y:0,duration:2.4,delay:.5})
     gsap.fromTo("#MultiGsap3",{ opacity:0, y:100,},{opacity:1,y:0,duration:2.4,delay:1})
+
+    //Background animations
+    gsap.fromTo("#MultiGsapAnimeDot",{ y:-100, x:-100},{opacity:1,y:500, x:900,ease:"slow", duration:10,repeat: -1,yoyo: true})
+    gsap.fromTo("#MultiGsapAnimeDot2",{  x:-100},{opacity:1,x:700,y:700,ease:"slow", duration:9,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot3",{opacity:1,y:1200,ease:"slow",delay:1, duration:7,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot4",{opacity:1,y:1200,ease:"slow",delay:1, duration:6,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot5",{opacity:1,y:1200,x:200,ease:"slow",delay:.5, duration:8,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot6",{opacity:1,y:300,x:300,ease:"slow",delay:1.5, duration:8.4,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot7",{opacity:1,y:1200,x:-500,ease:"slow",delay:3, duration:5,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot8",{opacity:1,y:900,x:-800,ease:"slow",delay:2.3, duration:8,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot9",{opacity:1,y:700,x:100,ease:"slow",delay:1, duration:14,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot10",{opacity:1,y:1200,x:-200,ease:"slow",delay:3, duration:7.5,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot11",{opacity:1,y:950,x:-200,ease:"slow",delay:2, duration:5.5,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot12",{opacity:1,y:1050,x:-200,ease:"slow",delay:2.5, duration:9,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot13",{opacity:1,y:1200,x:-200,ease:"slow",delay:1.5, duration:6.8,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot14",{opacity:1,y:1200,x:-200,ease:"slow",delay:1, duration:4.9,repeat: -1,yoyo: true})
+    gsap.to("#MultiGsapAnimeDot15",{opacity:1,y:1200,x:-200,ease:"slow",delay:1.5, duration:10,repeat: -1,yoyo: true})
 
     gsap.fromTo("#MultiGsap4",{ opacity:0, y:100,},{opacity:1,y:0,duration:1, scrollTrigger:{ trigger:"#MultiGsap4"}})
     gsap.fromTo("#MultiGsap5",{ opacity:0},{opacity:1,duration:2, delay:1, scrollTrigger:{ trigger:"#MultiGsap5"}})
@@ -38,7 +56,22 @@ export default function HomePage() {
         <div className='containerOne' id="container1">
             <img className='background' src="images/logoSamurai-removebg-preview.png" alt='' id='MultiGsap3Img'></img>
             <img className='background1' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeA'></img>
-            <img className='background1b' src="images/SeekPng.com_dot-png_274118.png" alt='' id='MultiGsapAnimeA2'></img>
+            <img className='smallCircle background1b' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot'></img>
+            <img className='smallCircle background1bb' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot2'></img>
+            <img className='smallCircle background1d' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeDot3'></img>
+            <img className='smallCircle background1e' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeDot4'></img>
+            <img className='smallCircle background1f' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot5'></img>
+            <img className='smallCircle background1g' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot6'></img>
+            <img className='smallCircle background1h' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot7'></img>
+            <img className='smallCircle background1I' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot8'></img>
+            <img className='smallCircle background1j' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeDot9'></img>
+            <img className='smallCircle background1k' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot10'></img>
+            <img className='smallCircle background1L' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot11'></img>
+            <img className='smallCircle background1M' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot12'></img>
+            <img className='smallCircle background1N' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeDot13'></img>
+            <img className='smallCircle background1O' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot14'></img>
+            <img className='smallCircle background1P' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot15'></img>
+
             <img className='background1c' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeA2'></img>
             <div className='background2'></div>
             <div className='noteContent'></div>
@@ -100,6 +133,9 @@ export default function HomePage() {
                         <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>Launch of the website</span>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Presale</span>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Initiate partnership</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>TG Call Groups</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Influencer Marketing</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Staking Pools with HUGE APR</span>
                      </div>
                 </div>
                 <div className='indiv'>
@@ -109,6 +145,7 @@ export default function HomePage() {
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Listing on coin voting website</span>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Real-time price charts</span>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Launch of lottery Game</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>CEX Listing</span>
                      </div>
                 </div>
                 <div className='indiv'>
@@ -124,16 +161,16 @@ export default function HomePage() {
                 <div className='indiv'>
                      <h3>Stage IV 💰</h3>
                      <div className='list'>
-                        <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>Launch Pepe Swap</span>
-                        <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>Website redesign</span>
-                        <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>NFT staking</span>
-                        <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>Launch of mini-game</span>
-                        <span><i style={{"padding":"6px","color":"green"}} class="fa fa-check-circle" aria-hidden="true"></i>RoadMap Expansion</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Launch Pepe Swap</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Website redesign</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>NFT staking</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Launch of mini-game</span>
+                        <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>RoadMap Expansion</span>
                      </div>
                 </div>
             </div>
             </div>
-            <div className='section5'>
+            {/* <div className='section5'>
                 <h1 id='MultiGsap10'>As Seen On</h1>
                 <div className='logos' id='MultiGsap11'>
                     <img src="images/SeekPng.com_dot-png_274118.png"></img>
@@ -143,8 +180,8 @@ export default function HomePage() {
                     <img src="images/SeekPng.com_dot-png_274118.png"></img>
                     <img src="images/SeekPng.com_dot-png_274118.png"></img>
                 </div>
-            </div>
-            <div className='FAQs' id='FAQs'>
+            </div> */}
+            {/* <div className='FAQs' id='FAQs'>
                 <h2 id='MultiGsap12'>Frequently asked questions(FAQs)</h2>
                 <div className='accordion'>
                     {dataFAQs.map((item, i)=>(
@@ -154,52 +191,9 @@ export default function HomePage() {
                     </div>
                     ))}
             </div>
-            <div className='footer'>
-                <div className='one'>
-                <div className='indiv'>
-                <h2>Our Social Profiles</h2>
-                <p>Get in touch with us for the latest news, offers and updates.</p>
-                <div className='links'>
-                <i style={{"fontSize":"20px",}} class="fa fa-facebook" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-reddit" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-telegram" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-facebook" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-reddit" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-telegram" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-twitter" aria-hidden="true"></i>
-                    <i style={{"fontSize":"20px",}} class="fa fa-telegram" aria-hidden="true"></i>
-                </div>
-                </div>
-                <div className='indiv'>
-                <h2 className='about'>About</h2>
-                <div>Mars Doge Token</div>
-                <div>Bug Bounty</div>
-                <div>Development Team</div>
-                </div>
-
-                <div className='indiv'>
-                <h2 className='resources'>resources</h2>
-                <div>Documents</div>
-                <div>Whitepaper</div>
-                <div>Audits</div>
-                </div>
-
-                <div className='indiv'>
-                <h2 className='support'>Support</h2>
-                <div>Contact Us</div>
-                <div>Cookie Policy (US)</div>
-                <div>Terms & Conditions</div>
-                </div>
-                </div>
-               
-                <div className='copyRight'>
-                Copyright © 2022 Pepe Samurai
-                </div>
-            </div>
+            </div> */}
+           <Footer/>
         </div>
-  </div>
   )
 }
 
