@@ -39,8 +39,9 @@ export default function HomePage() {
     gsap.to("#MultiGsapAnimeDot14",{opacity:1,y:1200,x:-200,ease:"slow",delay:1, duration:4.9,repeat: -1,yoyo: true})
     gsap.to("#MultiGsapAnimeDot15",{opacity:1,y:1200,x:-200,ease:"slow",delay:1.5, duration:10,repeat: -1,yoyo: true})
 
+    gsap.fromTo("#section2b",{ opacity:0, y:100,},{opacity:1,y:0,delay:.5,duration:1, scrollTrigger:{ trigger:"#section2b"}})
     gsap.fromTo("#MultiGsap4",{ opacity:0, y:100,},{opacity:1,y:0,duration:1, scrollTrigger:{ trigger:"#MultiGsap4"}})
-    gsap.fromTo("#MultiGsap5",{ opacity:0},{opacity:1,duration:2, delay:1, scrollTrigger:{ trigger:"#MultiGsap5"}})
+    gsap.fromTo("#MultiGsap5",{ opacity:0},{opacity:1,duration:2, delay:.5, scrollTrigger:{ trigger:"#MultiGsap5"}})
     gsap.fromTo("#MultiGsap6",{ opacity:0, y:100,},{opacity:1,y:0,duration:1.2, scrollTrigger:{ trigger:"#MultiGsap6"}})
     gsap.fromTo("#MultiGsap7",{ opacity:0, y:100,},{opacity:1,y:0,duration:1.4, delay:1, scrollTrigger:{ trigger:"#MultiGsap7"}})
     gsap.fromTo("#MultiGsap8",{ opacity:0 },{opacity:1,y:0,duration:1.3, scrollTrigger:{ trigger:"#MultiGsap8"}})
