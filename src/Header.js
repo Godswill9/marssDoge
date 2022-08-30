@@ -42,18 +42,16 @@ const close=()=>{
                 <div><a href="/"><span>Home</span></a></div>
                 <div><a href="#Section3"><span>Tokenomics</span></a></div>
                 <div><a href="#Section4"><span>Road Map</span></a></div>
-                {/* <div><a href="#FAQs"><span>FAQ</span></a></div> */}
-                <div><span>Whitepaper</span></div>
+                <div><a href="/about"><span>About us</span></a></div>
             </div>
             </div>
             <div className='mobileView'>
-              {visibility=="hidden"? <i className='bars' onClick={handleBar} style={{"fontSize":"25px","fontWeight":"10px","marginRight":"1em","color":"black"}} class="fa fa-bars" aria-hidden="true"></i>:<i className='bars' onClick={handleBar} style={{"fontSize":"25px","fontWeight":"10px","marginRight":"1em","color":"black"}} class="fa fa-times" aria-hidden="true"></i>}
+              {visibility=="hidden"? <i className='bars' onClick={handleBar} style={{"fontSize":"25px","fontWeight":"10px","marginRight":"1em","color":"rgb(209, 204, 204)"}} class="fa fa-bars" aria-hidden="true"></i>:<i className='bars' onClick={handleBar} style={{"fontSize":"25px","fontWeight":"10px","marginRight":"1em","color":"rgb(209, 204, 204)"}} class="fa fa-times" aria-hidden="true"></i>}
             <div className='contentDiv' style={{"width":width, "visibility":visibility}}>
-            <div onClick={close}><a href="#container1"><span>Home</span></a></div>
+            <div onClick={close}><a href="/"><span>Home</span></a></div>
                 <div onClick={close}><a href="#Section3"><span>Tokenomics</span></a></div>
                 <div onClick={close}><a href="#Section4"><span>Road Map</span></a></div>
-                {/* <div onClick={close}><a href="#FAQs"><span>FAQ</span></a></div> */}
-                  <div><span>Whitepaper</span></div>
+                <div onClick={close}><a href="/about"><span>About us</span></a></div>
                   <div onClick={close}><button className='mobileBuy'>Buy now</button></div>
                   </div>
                     </div>

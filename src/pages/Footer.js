@@ -21,7 +21,6 @@ export default function Footer() {
                 <div className='indiv'>
                 <h2 className='resources'>resources</h2>
                 <div>Documents</div>
-                <div>Whitepaper</div>
                 </div>
 
                 <div className='indiv'>

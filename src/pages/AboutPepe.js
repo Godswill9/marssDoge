@@ -5,8 +5,10 @@ import './styles2.css'
 
 export default function AboutPepe() {
   return (
-    <div className='aboutPepe'>
-        <Header/>
+    <div className='all'>
+      <div className='headerSec'>
+      <Header/>
+      </div>
         <div className='cont1'>
             <div className='more'>
             <h1 className='aboutHeader'>About Pepe Samurai</h1>
@@ -14,11 +16,14 @@ export default function AboutPepe() {
         Pepe Samurai is a community-driven reflection token. 
         The Pepe Samurai contract consists of four key features as static rewards, auto burn, development fee acquisition, and liquidity acquisition.<br></br><br></br>
 
-        Each Pepe Samurai transaction will be taxed at 10% of the transaction amount. 
-        Then a 7% fee will be redistributed to all existing holders through a rebasing mechanism, 1% will be burned by transferring to the dead wallet, another 1% will be transferred to the development wallet, and the remaining 1% will be accumulated internally until sufficient capital is gathered.
+        Each Pepe Samurai transaction will be taxed, 
+       of which some percentage will be redistributed to all existing holders, then burned by transferring to the dead wallet. 
+       Another % will be transferred to the development wallet for marketting and project development.
         </div>
             </div>
-        <Footer/>
+        </div>
+        <div className='footer'>
+        <Footer/>  
         </div>
     </div>
   )

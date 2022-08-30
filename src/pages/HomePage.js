@@ -55,7 +55,7 @@ export default function HomePage() {
         <Header/>
         <div className='containerOne' id="container1">
             <img className='background' src="images/logoSamurai-removebg-preview.png" alt='' id='MultiGsap3Img'></img>
-            <img className='background1' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeA'></img>
+            {/* <img className='background1' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeA'></img> */}
             <img className='smallCircle background1b' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot'></img>
             <img className='smallCircle background1bb' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot2'></img>
             <img className='smallCircle background1d' src="images/circle3-removebg-preview.png" alt='' id='MultiGsapAnimeDot3'></img>
@@ -72,7 +72,7 @@ export default function HomePage() {
             <img className='smallCircle background1O' src="images/ligthGreen-removebg-preview.png" alt='' id='MultiGsapAnimeDot14'></img>
             <img className='smallCircle background1P' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeDot15'></img>
 
-            <img className='background1c' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeA2'></img>
+            {/* <img className='background1c' src="images/circleLightPink-removebg-preview (1).png" alt='' id='MultiGsapAnimeA2'></img> */}
             <div className='background2'></div>
             <div className='noteContent'></div>
                 <div className='trapezoid'></div>
@@ -84,12 +84,12 @@ export default function HomePage() {
                      </p>
                     <p className='para2' id='MultiGsap3'>
                         The Pepe Samurai token will be utilized as a payment and reward system 
-                        on its' future gambling platform and Pepe Samurai NFT, marketplace. Please refer to our RoadMap and Whitepaper 
+                        on its' future gambling platform and Pepe Samurai NFT, marketplace. Please refer to our RoadMap 
                         for more details.
                     </p>
 
                     <h4>Contact Address</h4>
-                    <span className='para3'>Token name</span>:<span className='para3Det'>Pepe Samurai</span>
+                    <span className='para3'>Token name:</span><span className='para3Det'>Pepe Samurai</span>
                     <p className='para4'>Total supply</p>
                     <p className='para5'>Tax</p>
 
@@ -111,8 +111,27 @@ export default function HomePage() {
             <div className='Section2' id='Section2'>
                 <h2 id='MultiGsap4'>Announcements</h2>
                 <div className='details' id='MultiGsap5'>
-                    <p>✔ (Announcements coming soon ⛷)</p>
+                    <p>✔(Visit our Telegram group for more details ⛷)</p>
                 </div>
+            </div>
+            <div className="newSecWrap">
+            <div className='section2b' id='section2b'>
+                <div className='contents'>
+                    <img src="images/5f415abfd3d63e0004b93e24-removebg-preview.png" alt=''></img>
+                    <h3>Reflection</h3>
+                    <p>Buy And Hold to earn a passive income in to your wallet.</p>
+                </div>
+                <div className='contents'>
+                    <img src="images/phoneMarketting-removebg-preview.png" alt=''></img>
+                    <h3>Marketting % Development</h3>
+                    <p>Fund is needed for marketting and developing Pepe Samurai to the next level.</p>
+                </div>
+                <div className='contents'>
+                    <img src="images/LiquidityImage.jfif" alt=''></img>
+                    <h3>Auto Liquidity</h3>
+                    <p>This will make sure that we have a stable liquidity, so that the project will be able to maintain the price.</p>
+                </div>
+            </div>
             </div>
             <div className='section3' id='Section3'>
                 <h1 id='MultiGsap6'>Tokenomics and Special Features</h1>
@@ -170,28 +189,6 @@ export default function HomePage() {
                 </div>
             </div>
             </div>
-            {/* <div className='section5'>
-                <h1 id='MultiGsap10'>As Seen On</h1>
-                <div className='logos' id='MultiGsap11'>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                    <img src="images/SeekPng.com_dot-png_274118.png"></img>
-                </div>
-            </div> */}
-            {/* <div className='FAQs' id='FAQs'>
-                <h2 id='MultiGsap12'>Frequently asked questions(FAQs)</h2>
-                <div className='accordion'>
-                    {dataFAQs.map((item, i)=>(
-                            <div className='panel' key={i}>
-                        <span onClick={()=> toggle(i)}>{item.Question}  {answer== i? <i style={{"fontSize":"15px","fontWeight":"10px" }} class="fa fa-chevron-up" aria-hidden="true"></i>:<i style={{"fontSize":"15px","fontWeight":"10px" }} class="fa fa-chevron-down" aria-hidden="true"></i>}  </span>
-                        {answer ==i ? <div className='content' style={{"display":"block"}}>{item.Answer}</div>:<div className='content'></div>}
-                    </div>
-                    ))}
-            </div>
-            </div> */}
            <Footer/>
         </div>
   )
@@ -236,11 +233,10 @@ const dataFAQs=[
 ]
 
 const chartData = {
-    labels: [
-    ],
+    labels: [],
     datasets: [{
       label: 'My First Dataset',
-      data: [ 140, 180, 110, 80],
+      data: [ 30, 40, 20, 10],
       backgroundColor:  [
         'rgb(146, 43, 43)', 
         'rgb(110, 192, 89)',

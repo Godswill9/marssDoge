@@ -3,30 +3,32 @@
     padding:0;
     box-sizing: border-box;
 }
-.aboutPepe .cont1{
-   /* border:2px solid black; */
-   position:absolute;
-   top:20%
-   /* height:20em; */
-   
-   /* margin-top: 8em; */
-   /* margin-left: 0px */
+.all{
+    width:100%;
 }
-.aboutPepe .cont1 .more{
-    width: 80%;
-    margin-bottom: 5em;
-    margin-left: 2em;
-    /* border: 2px solid black; */
+.cont1{
+    width:100%;
+    background: linear-gradient(#100063, black);
+    color:rgb(248, 248, 248);
+    padding-left: 2em;
+    padding-bottom:1.5em
 }
-.aboutPepe .aboutHeader{
-    font-size: 2.3em;
-    color: black;
-    margin-top: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.cont1 h1{
+    font-size:2.4em;
+    padding-top: 5em;
+    color:#008eec;
+    font-family: 'Orbitron', sans-serif;
 }
-.aboutPepe .content{
+.cont1 .content{
+    font-family: verdana;
     margin-top:2em;
-    font-size: 19px;
-     font-family: segoe UI;
-     /* font-weight: lighter; */
+    font-size: 17px;
+}
+.cont1 .footer{
+    position:absolute;
+    bottom:0;
+    z-index: 4;
+}
+.headerSec{
+    position:absolute;
 }
