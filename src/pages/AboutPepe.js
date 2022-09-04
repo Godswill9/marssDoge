@@ -6,7 +6,7 @@ import './styles2.css'
 export default function AboutPepe() {
   return (
     // <div>
-    <div>
+    <div className='all'>
       {/* <div className='headerSec'> */}
       <Header/>
       {/* </div>  */}
