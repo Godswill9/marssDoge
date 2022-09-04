@@ -6,11 +6,11 @@ import './styles2.css'
 export default function AboutPepe() {
   return (
     <div className='all'>
-      <div className='headerSec'>
+      {/* <div className='headerSec'> */}
       <Header/>
-      </div>
+      {/* </div>  */}
         <div className='cont1'>
-            <div className='more'>
+            {/* <div className='more'> */}
             <h1 className='aboutHeader'>About Pepe Samurai</h1>
         <div className='content'>
         Pepe Samurai is a community-driven reflection token. 
@@ -20,11 +20,11 @@ export default function AboutPepe() {
        of which some percentage will be redistributed to all existing holders, then burned by transferring to the dead wallet. 
        Another % will be transferred to the development wallet for marketting and project development.
         </div>
-            </div>
+            {/* </div> */}
         </div>
-        <div className='footer'>
+        {/* <div className='footer'> */}
         <Footer/>  
-        </div>
+        {/* </div> */}
     </div>
   )
 }

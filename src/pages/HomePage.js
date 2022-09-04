@@ -138,7 +138,7 @@ export default function HomePage() {
                 <h1 id='MultiGsap6'>Tokenomics and Special Features</h1>
                 <div className='details' id='MultiGsap7'>
                     <Charts chartsData={chartData} type='line'/>
-                </div>
+                </div>-
             </div>
             <div className='section4' id='Section4'>
                 <img src='' alt=''></img>
@@ -169,7 +169,7 @@ export default function HomePage() {
                      </div>
                 </div>
                 <div className='indiv'>
-                     <h3>Stage III 🐱‍🏍🐱‍🏍</h3>
+                     <h3>Stage III 🐱‍🏍</h3>
                      <div className='list'>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Listing on Coin Gecko</span>
                         <span><i style={{"padding":"6px"}} class="fa fa-clock-o" aria-hidden="true"></i>Listing on coin market cap</span>

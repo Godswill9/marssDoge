@@ -45,6 +45,11 @@ a{
     margin-left:10px;
     font-family: verdana;
 }
+@media (max-width:293px) {
+    .logo span{
+        font-size:18px
+    }
+}
 .logo span:hover{
     color:rgb(216, 212, 212);
 }
@@ -102,8 +107,19 @@ a{
     padding:20px;
     font-size: 16px;
     font-family: Verdana;
-    margin:2px
+    /* margin:2px; */
+    transition: .3s ease-in-out;
+    border-radius: 3px;
 }
+.mobileView .contentDiv div:hover{
+   background-color: rgba(240, 248, 255, 0.507);
+   color:black;
+}
+.mobileView .contentDiv button{
+    margin-left:15px;
+    margin-top:20px
+}
+
 .dropDown{
     background-color: rgb(48, 46, 46);
 }
@@ -122,10 +138,10 @@ a{
     position: absolute;
     bottom: 20;
     padding:15px;
-    background-color: rgb(71, 70, 69);
+    background-color: rgb(71, 70, 69); 
     color:white;
     border:none;
-    border-radius: 5px;
+    border-radius: 5px; 
     font-size: 18px;
 }
 .mobileBuy:hover{

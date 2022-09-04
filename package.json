@@ -1,5 +1,6 @@
 {
   "name": "page-two",
+  "homepage": "http://www.pepesamurai.xyz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
