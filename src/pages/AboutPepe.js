@@ -5,7 +5,8 @@ import './styles2.css'
 
 export default function AboutPepe() {
   return (
-    <div className='all'>
+    // <div>
+    <div>
       {/* <div className='headerSec'> */}
       <Header/>
       {/* </div>  */}
@@ -56,7 +57,6 @@ export default function AboutPepe() {
                 Copyright © 2022 Pepe Samurai
                 </div>
             </div>  
-        {/* </div> */}
-    </div> 
+    </div>
   )
 }
